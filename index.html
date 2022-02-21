@@ -4,25 +4,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHIMPI Thimpi</title>
+    <meta name="description" content="Love you ">
+    <meta name="keywords" content="shimpi">
+    <meta name="author" content="Animesh Roy">
+  
+    <title>Shimpi</title>
 </head>
-<style>
-
-html,body{
-        background-color: #f8f9f4;
-    }
-    .responsive {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        margin-left: auto;
-
-    }
-
-</style>
 <body>
+<style>
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #E6E6FA;
+}
+h3{
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:x-large; 
+    text-size-adjust: auto;
+    text-rendering: optimizeSpeed;
+}
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.drawing {
+    display: none;
+    width: calc(100% - 32px);
+    max-width: 300px;
+    height: auto;
+    transform: scale(0.9);
+}
+#head {
+    transform: rotate(10deg);
+    transform-origin: center 38%;
+    animation-name: beary;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
-    <img src="img/monster.jpeg" alt="SHIMPI" class="responsive">
+.impl {
+    width: calc(100% - 32px);
+    height: auto;
+    max-width: 300px;
+}
 
+@keyframes beary {
+    0% {
+        transform: rotate(0deg);
+    }
+    46% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(14deg);
+    }
+    96% {
+        transform: rotate(14deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@media (max-height: 480px) {
+    .drawing, .impl {
+        width: auto;
+        height: calc(100vh - 8px);
+    }
+}
+.shakey {
+    animation-name: watery-eyes;
+    animation-duration: 200ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: center center;
+}
+@keyframes watery-eyes {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: rotateZ(1deg);
+    }
+}
+.heart {
+    animation-name: hearty;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: center 60%;
+}
+@keyframes hearty {
+    0% { transform: scale(0.95); }
+    5% { transform: scale(0.975); }
+    10% { transform: scale(0.95); }
+    15% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(0.95); }
+}
+</style>
+
+<div class="container">
+    <!-- start of svg -->
+    <svg class="impl" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 142 240" style="enable-background:new 0 0 142 240;" xml:space="preserve">
+<style type="text/css">
+.st0{fill:#E29500;stroke:#000000;stroke-width:3;}
+.st1{fill:#FF4545;stroke:#FF0042;stroke-width:3;}
+.st2{fill:none;stroke:#000000;stroke-width:2;}
+.st3{fill:#FFD392;stroke:#000000;stroke-width:2;}
+.st4{fill:none;stroke:#000000;stroke-width:3;}
+.st5{fill:#FFFFFF;}
+.st6{fill:none;stroke:#F9284E;}
+</style>
+<g id="body-v2">
+<path class="st0" d="M73.7,120.6l10.3,4.1c5.4,2.1,8.9-1.2,9.3,4.5l1.8,29.7c0,0,17.7,52.7-30.5,52.6s-34.8-49.1-30.9-54.2
+L26.8,130l4.1-9.5l26.5-0.7"/>
+</g>
+<g id="Layer_8">
+<path class="st1 heart" d="M61.9,177c0,0,36.4-17.5,19.7-30.2c-8.6-4.2-12.9,1.9-12.9,1.9s-3.3-8.7-10.5-7.5S40.8,148.1,61.9,177z"/>
+</g>
+<g id="right-arm-v2">
+<path class="st0" d="M89.9,149.4l-4,1.9c-6.5,3.3-11.1,10.7-9.4,15.4c1.6,4.6,14.2,14.5,25.4,0.1c11.4-14.7-9.9-39.2-9.9-39.2"/>
+</g>
+<g id="left-arm-v2">
+<path class="st0" d="M29.2,124.7c0,0-14.6,28.5-4.3,38c8.7,8.1,28.8,9.3,29.4-6.8c0.6-16-18.2-6.5-20.2-6.1"/>
+</g>
+<g id="right-foot">
+<path class="st0" d="M97.6,203.1c-1,10.2-8.3,17.3-15.8,16.5c-7.5-0.7-13.3-9.1-12.3-19.3c1-10.2,8.3-17.3,15.8-16.5
+C92.8,184.5,98.6,192.9,97.6,203.1z"/>
+
+<ellipse transform="matrix(9.878241e-02 -0.9951 0.9951 9.878241e-02 -132.8697 270.3269)" cx="82.8" cy="208.5" rx="7.3" ry="6.9"/>
+<circle cx="84.5" cy="191.9" r="4.3"/>
+<circle cx="91.7" cy="196.9" r="3.4"/>
+<circle cx="76.4" cy="195.4" r="3.4"/>
+</g>
+<g id="left-foot">
+<path class="st0" d="M54.8,199.3c0.5,10.2-5.7,18.3-13.3,18.6c-7.5,0.4-14.5-7.1-15-17.3c-0.5-10.2,5.7-18.3,13.3-18.6
+C47.3,181.7,54.3,189.1,54.8,199.3z"/>
+<ellipse transform="matrix(0.9989 -4.693577e-02 4.693577e-02 0.9989 -9.6627 2.1504)" cx="41" cy="206.8" rx="6.9" ry="7.3"/>
+<circle cx="40.2" cy="190.1" r="4.3"/>
+<circle cx="48.1" cy="194.1" r="3.4"/>
+<circle cx="32.7" cy="194.8" r="3.4"/>
+</g>
+<g id="head">
+<path class="st0" d="M46.2,32c0,7.6-6,13.7-13.3,13.7S19.6,39.6,19.6,32c0-7.6,6-13.7,13.3-13.7S46.2,24.4,46.2,32z"/>
+<path class="st0" d="M117.2,55.4c-6.9,3.1-15,0.2-18-6.5c-3-6.7,0.1-14.6,7-17.7c6.9-3.1,15-0.2,18,6.5
+C127.2,44.3,124.1,52.3,117.2,55.4z"/>
+<path class="st2" d="M106.6,47.5l2.3-2 M108.9,45.5l1-0.4c0.9-0.4,2-0.6,3-0.4l0,0 M108.9,45.5l0.1-0.4c0.3-1.1,0.1-2.2-0.3-3.2
+l0,0"/>
+<path class="st2" d="M34.6,38.4l-0.9-2.9 M33.8,35.5v-1c0-1,0.3-2,0.9-2.9l0,0 M33.8,35.5l-0.4-0.3c-0.9-0.7-2-1-3.1-1l0,0"/>
+<path class="st0" d="M117.8,85.1c0,28.1-23.7,51-53.1,51s-53.1-22.9-53.1-51c0-28.1,23.7-51,53.1-51S117.8,57,117.8,85.1z"/>
+<path class="st3" d="M81.8,93.7c0,7.3-6.3,13.3-14.1,13.3s-14.1-6-14.1-13.3c0-7.3,6.3-13.3,14.1-13.3S81.8,86.4,81.8,93.7z"/>
+<path class="st4" d="M67.2,94.1l-0.4,0.7c-0.6,1-1.4,1.8-2.4,2.3l-0.5,0.3c-0.7,0.4-1.4,0.6-2.2,0.6h-0.2c-1,0-2-0.4-2.8-1.1l0,0
+c-0.4-0.4-0.7-0.8-0.9-1.3l-0.6-1.4"/>
+<path class="st4" d="M77.9,93.3L77.5,94c-0.6,1-1.4,1.8-2.4,2.3l-0.5,0.3c-0.7,0.4-1.4,0.6-2.2,0.6h-0.2c-1,0-2-0.4-2.8-1.1l0,0
+c-0.4-0.4-0.7-0.8-0.9-1.3l-0.6-1.4"/>
+<circle id="left-eye" cx="31.2" cy="71.9" r="11.1"/>
+<circle class="st5" cx="28.2" cy="77.4" r="3"/>
+<circle class="st5" cx="26.1" cy="71.9" r="1.7"/>
+<ellipse id="right-eye" cx="100.6" cy="77" rx="11.1" ry="10.3"/>
+<circle id="right-eye-white-big" class="st5" cx="104.5" cy="81.7" r="3"/>
+<circle id="right-eye-white-sml" class="st5" cx="103.2" cy="76.1" r="1.7"/>
+<path id="cheek-right" class="st6 shakey" d="M111,96.1l-7.5,0.2l9.8-4.2l-13.6,2.1l12.5-4.7l-10.6,1.3l6.9-3.4"/>
+<path id="cheek-left" class="st6 shakey" d="M22.8,85.4l7.4,2.3l-10.7,0.5l13.1,2.5l-13.7,0.1l10.4,2.6l-7.4,1.1"/>
+<ellipse cx="67.6" cy="86.4" rx="6.4" ry="7.7"/>
+</g>
+</svg>
+
+    <!-- end of svg -->
+</div>
+<h3>Shimpi</h3>
+    
 </body>
 </html>
